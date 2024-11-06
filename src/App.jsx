@@ -1,21 +1,20 @@
-import './App.css'
-import Login from './components/Login'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import LandingPage from './pages/LandingPage'
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Kalkulator from './pages/Kalkulator';
 
-const App = () => {
- 
+function App() {
   return (
-    <div>
-      <Login/>
-    </div>
-  );
-};
+      <Router>
+        <Routes>
+          <Route path='/' element={<LandingPage/>}></Route>
+          <Route path='/login' element={<Login/>}></Route>
+          <Route path='/register' element={<Register/>}></Route>
+          <Route path='/kalkulator' element={<Kalkulator/>}></Route>
+        </Routes>
+      </Router>
+    )
+}
 
-// function App() {
-//   return (
-//     <div>
-//       <Navbar/>
-//     </div>
-//   )
-// }
-
-export default App
+export default App;
