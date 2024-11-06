@@ -19,7 +19,7 @@ const Navbar = () => {
                 <Link to='/katalog' className="cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
                     Katalog
                 </Link>
-                <Link to='/keranjang' className="cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
+                <Link to='/cart' className="cursor-pointer text-teal-700 hover:text-teal-500 py-3 px-8 font-bold">
                     Keranjang
                 </Link>
             </div>
